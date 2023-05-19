@@ -108,6 +108,7 @@ h1 {
     border: var(--border-img);
     border-radius: var(--border-radius-img);
     box-shadow: var(--box-shadow);
+    width: 30vw;
     
 }
 
@@ -135,7 +136,8 @@ h1 {
 /*-----How its works-----*/
 
 .worksImg {
-    width: ;
+    width: 25vw;
+    
 
 }
 
@@ -162,7 +164,8 @@ h1 {
 
 .download {
     display: flex;
-    justify-content: center;
+    
+    flex-direction: column;
     
     margin: 7rem 30vw;
     background-color: var(--color-secundary-color2);
