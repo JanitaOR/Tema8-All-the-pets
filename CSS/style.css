@@ -9,56 +9,92 @@
     --color-secundary-color-light1:#f2ffaa;
     --color-secundary-color-light2:#f3b1dc;
     --color-secundary-color-light3:#a1ffe6;
+    --color-secundary-color2:#c79cff;
 /*-----Border-----*/
     --border-radius-img:10px;
-    --border-shadow:4px 4px 0px #262626;
+    --box-shadow:4px 4px 0px #262626;
+    --border-img:0.3rem solid #262626;
     
     
 }
+
+/*-----Header-----*/
 
 .logotext {
     font-size: 2.25rem;
 }
-.title {
-    display: flex;
-    font-size: 5vw;
 
-}
+
 
 header {
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .nav-header {
     display: flex;
     list-style: none;
+    justify-content: space-between;
 
 }
 
+header li {
+    margin: 1rem;
+}
+
+/*-----Herobanner-----*/
+.title {
+    display: flex;
+    background-color: #ffffff;
+    padding: 0.3rem;
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
+    box-shadow: var(--box-shadow);
+    justify-content: center;
+    
+}
+
+h1 {
+    font-size: 3rem;
+}
 .herobanner {
+  display: flex;
+  border-top: solid 0.3rem #262626;
+  border-bottom: solid 0.3rem #262626;
+}
+
+.herobanner-container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 70vw;
     background-color: #9bf1ff;
-
+    
+    
 }
 
 .herotext-container {
     width: 40vw;
     min-width: 270px;
+    margin: 7vw;
 }
+
 
 .productImg {
     height: 50vw;
+    margin: 3.5rem; 
 }
+
+/*-----Consept-----*/
 
 .consept {
     display: flex;
     background-color:var(--color-secundary-color-light3);
     margin: 7rem;
     flex-flow: column;
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
+
 }
 
 .conseptText {
@@ -67,25 +103,86 @@ header {
    position: ;*/
 }
 
-/*
+
 .conseptImg {
-    border: 0.3rem solid #262626;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0px #262626;
+    border: var(--border-img);
+    border-radius: var(--border-radius-img);
+    box-shadow: var(--box-shadow);
+    
 }
 
 .conseptText-container {
-
+    display: flex;
+    margin: 7rem;
+    
 }
-*/
+
+/*-----Prototype-----*/
 
 .prototype {
     display: flex;
     background-color: var(--color-secundary-color-light1);
     margin: 7rem;
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
 }
 
 .prototypeText {
     margin: 3.5rem;
 
+}
+
+/*-----How its works-----*/
+
+.worksImg {
+    width: ;
+
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secundary-color-light2);
+    margin: 7rem;
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
+}
+
+.works-container {
+    display: flex;
+    margin: 7vw;
+    
+
+}
+.worksText {
+    margin: 3.5rem;
+}
+
+/*-----download-----*/
+
+.download {
+    display: flex;
+    justify-content: center;
+    
+    margin: 7rem 30vw;
+    background-color: var(--color-secundary-color2);
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
+}
+
+.downloadImg {
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
+    box-shadow: var(--box-shadow);
+    margin: 3.5rem;
+    width: 4rem;
+}
+
+/*-----Footer-----*/
+
+footer {
+    border-top: solid 0.3rem #262626;
+    background-color: var(--color-primary-color-light)
 }
