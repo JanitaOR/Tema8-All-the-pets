@@ -15,13 +15,16 @@
     --box-shadow:4px 4px 0px #262626;
     --border-img:0.3rem solid #262626;
     
+    font-size: 16px;
     
 }
 
 /*-----Header-----*/
 
 .logotext {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
 }
 
 
@@ -29,6 +32,8 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
 .nav-header {
@@ -43,33 +48,29 @@ header li {
 }
 
 /*-----Herobanner-----*/
-.title {
+
+
+h1 {
+    font-size: 2.5rem;
     display: flex;
     background-color: #ffffff;
     padding: 0.3rem;
+    margin: 1rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
     box-shadow: var(--box-shadow);
     justify-content: center;
-    
 }
 
-h1 {
-    font-size: 3rem;
-}
-.herobanner {
-  display: flex;
-  border-top: solid 0.3rem #262626;
-  border-bottom: solid 0.3rem #262626;
-}
 
 .herobanner-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 70vw;
-    background-color: #9bf1ff;
     
+    background-color: #9bf1ff;
+    border-top: solid 0.3rem #262626;
+    border-bottom: solid 0.3rem #262626;
     
 }
 
@@ -79,44 +80,59 @@ h1 {
     margin: 7vw;
 }
 
+.heroText {
+    padding: 1rem;
+    background-color: var(--color-secundary-color2);
+    border: var(--border-img);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-img);
+
+}
+
 
 .productImg {
-    height: 50vw;
-    margin: 3.5rem; 
+    height: 70vh;
+    margin: 1.5rem; 
+   
+    
 }
 
 /*-----Consept-----*/
 
 .consept {
     display: flex;
+    flex-wrap: wrap;
     background-color:var(--color-secundary-color-light3);
     margin: 7rem;
-    flex-flow: column;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
-
 }
 
-.conseptText {
-   margin: 3.5rem;
-   /*display: flex;
+.conseptText-container {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+   
+    
+}
+
+.conseptTextBlock {
+   padding: 2rem;
+   flex-direction: column;
+    /*margin: 3.5rem;
+   display: flex;
    position: ;*/
 }
-
 
 .conseptImg {
     border: var(--border-img);
     border-radius: var(--border-radius-img);
     box-shadow: var(--box-shadow);
-    width: 30vw;
-    
+    width: calc(250px + 10vw);
+    margin: 2rem;
 }
 
-.conseptText-container {
-    display: flex;
-    margin: 7rem;
-    
-}
+
 
 /*-----Prototype-----*/
 
@@ -136,7 +152,8 @@ h1 {
 /*-----How its works-----*/
 
 .worksImg {
-    width: 25vw;
+    height: 60vh;
+    padding: 2rem;
     
 
 }
@@ -152,12 +169,31 @@ h1 {
 
 .works-container {
     display: flex;
-    margin: 7vw;
+    margin: 1rem;
+    
+    align-items: center;
     
 
 }
-.worksText {
-    margin: 3.5rem;
+.worksTextBlock {
+    /*margin: 3.5rem;*/
+    padding: 2rem;
+}
+
+
+
+/*-----omtale-----*/
+
+.kundeomtale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.omtale {
+    display: flex;
+    
 }
 
 /*-----download-----*/
@@ -188,3 +224,7 @@ footer {
     border-top: solid 0.3rem #262626;
     background-color: var(--color-primary-color-light)
 }
+
+
+
+/*etter 900px bredde på vw må den gå over i mobil"modus"*/
