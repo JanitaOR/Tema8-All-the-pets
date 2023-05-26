@@ -60,6 +60,7 @@ h1 {
     border: var(--border-img);
     box-shadow: var(--box-shadow);
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -67,6 +68,7 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
     
     background-color: #9bf1ff;
     border-top: solid 0.3rem #262626;
@@ -75,7 +77,7 @@ h1 {
 }
 
 .herotext-container {
-    width: 40vw;
+    width: 80vw;
     min-width: 270px;
     margin: 7vw;
 }
@@ -86,40 +88,70 @@ h1 {
     border: var(--border-img);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-img);
-
 }
 
 
 .productImg {
-    height: 70vh;
-    margin: 1.5rem; 
-   
-    
+    height: 60vh;
+    margin: 0rem 1rem 1rem 1rem;  
+}
+
+@media screen and (min-width: 800px) {
+    .herotext-container {
+        width: 40vw;
+    }
+    .productImg {
+        height: 70vh;
+        margin: 1.5rem;
+    }
 }
 
 /*-----Consept-----*/
 
-.consept {
+/*
+.about {
+    width: 90%;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 2rem auto;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1100px) {
+    .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    */
+    
+ .consept {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color:var(--color-secundary-color-light3);
     margin: 7rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
+    align-items: center;
 }
 
 .conseptText-container {
     display: flex;
+    flex-direction: column;
     margin: 1rem;
     align-items: center;
-   
+
     
 }
 
 .conseptTextBlock {
    padding: 2rem;
-   flex-direction: column;
-    /*margin: 3.5rem;
+   /*flex-direction: column;
+    margin: 3.5rem;
    display: flex;
    position: ;*/
 }
@@ -128,9 +160,65 @@ h1 {
     border: var(--border-img);
     border-radius: var(--border-radius-img);
     box-shadow: var(--box-shadow);
-    width: calc(250px + 10vw);
+    width: calc(200px + 10vw);
     margin: 2rem;
 }
+
+.consept1 {
+    order: 20;
+}
+
+.consept2 {
+    order: 10;
+}
+
+.consept3 {
+    order: 30;
+}
+
+.consept4 {
+    order: 40;
+}
+
+@media screen and (min-width: 950px) {
+    .consept {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+
+    .conseptText-container {
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: center;
+
+    }
+
+    .conseptTextBlock {
+       
+    }
+
+    .conseptImg {
+        
+    }
+    .consept1 {
+        order: 10;
+    }
+    
+    .consept2 {
+        order: 20;
+    }
+    
+    .consept3 {
+        order: 30;
+    }
+    
+    .consept4 {
+        order: 40;
+    }
+
+}
+
 
 
 
@@ -165,12 +253,14 @@ h1 {
     margin: 7rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
+    
 }
 
 .works-container {
     display: flex;
     margin: 1rem;
-    
+    flex-direction: column;
+
     align-items: center;
     
 
@@ -180,6 +270,49 @@ h1 {
     padding: 2rem;
 }
 
+ .works1 {
+        order: 20;
+    }
+    .works2 {
+        order: 10;
+    }
+    .works3 {
+        order: 30;
+    }
+    .works4 {
+        order: 40;
+    }
+    .works5 {
+        order: 60;
+    }
+    .works6 {
+        order: 50;
+    }
+
+@media screen and (min-width: 950px) {
+    .works-container {
+        flex-direction: row;
+    }
+
+   .works1 {
+        order: 10;
+    }
+    .works2 {
+        order: 20;
+    }
+    .works3 {
+        order: 30;
+    }
+    .works4 {
+        order: 40;
+    }
+    .works5 {
+        order: 50;
+    }
+    .works6 {
+        order: 60;
+    }
+}
 
 
 /*-----omtale-----*/
@@ -188,12 +321,62 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .omtale {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     
+}
+.kunde {
+    width: 20vw;
+    border: var(--border-img);
+    border-radius: var(--border-radius-img);
+    box-shadow: var(--box-shadow);
+}
+
+.omtaleText {
+    padding: 2rem;
+}
+
+.omtaleorder1 {
+    order: 10;
+}
+.omtaleorder2 {
+    order: 20;
+}
+.omtaleorder3 {
+    order: 40;
+}
+.omtaleorder4 {
+    order: 30;
+}    
+
+
+@media screen and (min-width: 950px) {
+   
+.kunde {
+    width: calc(100px + 5vw);
+}
+.omtale {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.omtaleorder1 {
+    order: 10;
+}
+.omtaleorder2 {
+    order: 20;
+}
+.omtaleorder3 {
+    order: 30;
+}
+.omtaleorder4 {
+    order: 40;
+}
 }
 
 /*-----download-----*/
@@ -222,9 +405,86 @@ h1 {
 
 footer {
     border-top: solid 0.3rem #262626;
-    background-color: var(--color-primary-color-light)
+    background-color: var(--color-primary-color-light);
+    height: 40vh;
 }
 
 
 
 /*etter 900px bredde på vw må den gå over i mobil"modus"*/
+
+/*
+.about {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 2rem auto;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1100px) {
+    .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
+
+
+
+
+    .facebook img {
+    width: 3.5rem;
+    order: 20;
+    padding: 1rem 2rem;
+}
+
+.instagram img {
+    width: 3.5rem;
+    order: 35;
+    padding: 1rem 2rem;
+}
+
+.pinterest img {
+    width: 3.5rem;
+    order: 15;
+    padding: 1rem 2rem;
+}
+
+.shop {
+    order: 30;
+    padding: 1rem 3rem; 
+}
+
+.galleri { 
+    order: 45;
+    padding: 1rem 3rem; 
+}
+
+@media screen and (min-width: 800px) {
+    .facebook {
+        order: 10;
+    }
+    
+    .shop {
+        order: 20;
+        padding: 1rem 2rem;
+    }
+    
+    .pinterest {
+        order: 40;
+    }
+
+    .galleri {
+       order: 60;
+       padding: 1rem 2rem;
+    }
+
+    .instagram {
+        order: 80;
+    }
+}
+*/
