@@ -411,9 +411,7 @@ header li {
         margin: 3.5rem;
 
     }
-    .download-container {
-        flex-direction: column;
-    }
+   
 }
 
 /*-----Footer-----*/
