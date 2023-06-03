@@ -4,6 +4,7 @@
 /*-----Typography-----*/
     font-family: 'Space Mono', monospace;
     color: #262626;
+    font-size: 16px;
 /*-----Colors-----*/
     --color-primary-color-light:#9bf1ff;
     --color-secundary-color-light1:#f2ffaa;
@@ -14,36 +15,9 @@
     --border-radius-img:10px;
     --box-shadow:4px 4px 0px #262626;
     --border-img:0.3rem solid #262626;
-    
-    font-size: 16px;
-    
 }
 
-/*-----Header-----*/
-
-.logotext {
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-header {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-
-header li {
-    margin: 1rem;
-}
-
-/*-----Herobanner-----*/
-
+/*-----tags-----*/
 
 h1 {
     font-size: 2.5rem;
@@ -57,24 +31,59 @@ h1 {
     justify-content: center;
     text-align: center;
 }
+h2 {
+    margin: 1rem 0;
+}
+video {
+    width: 200px;
+    margin: auto;
+    border: var(--border-img);
+}
+a {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+/*-----Header-----*/
+
+.logotext {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-header {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+header li {
+    margin: 1rem;
+}
+
+/*-----Herobanner-----*/
 
 .herobanner-container {
     display: flex;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    
     background-color: #9bf1ff;
     border-top: solid 0.3rem #262626;
     border-bottom: solid 0.3rem #262626;
 }
-
 .herotext-container {
     width: 80vw;
     min-width: 270px;
     margin: 7vw;
 }
-
 .heroText {
     padding: 1rem;
     background-color: var(--color-secundary-color2);
@@ -82,11 +91,26 @@ h1 {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-img);
 }
-
-
 .productImg {
     height: 60vh;
     margin: 0rem 1rem 1rem 1rem;  
+}
+.download-container-hero {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 2rem 2rem 2rem;
+}
+.h2-hero {
+    display: flex;
+    justify-content: center;
+}
+.downloadImg-hero {
+    justify-content: center;
+    border-radius: var(--border-radius-img);
+    border: var(--border-img);
+    box-shadow: var(--box-shadow);
+    margin: 0 1rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -101,7 +125,7 @@ h1 {
 
 /*-----Consept-----*/
 
- .consept {
+ .concept {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -113,89 +137,68 @@ h1 {
     padding: 2rem 0;
 }
 
-.conseptText-container {
+.conceptText-container {
     display: flex;
     flex-direction: column;
     margin: 1rem;
     align-items: center;
-
 }
-
-.conseptTextBlock {
+.conceptTextBlock {
    padding: 2rem;
-   /*flex-direction: column;
-    margin: 3.5rem;
-   display: flex;
-   position: ;*/
 }
-
-.conseptImg {
+.conceptImg {
     border: var(--border-img);
     border-radius: var(--border-radius-img);
     box-shadow: var(--box-shadow);
     width: calc(150px + 10vw);
     margin: 2rem;
 }
-
-.consept1 {
+.conceptOrder1 {
     order: 20;
 }
-
-.consept2 {
+.conceptOrder2 {
     order: 10;
 }
-
-.consept3 {
+.conceptOrder3 {
     order: 30;
 }
-
-.consept4 {
+.conceptOrder4 {
     order: 40;
 }
 
 @media screen and (min-width: 700px) {
-    .conseptImg {
+    .conceptImg {
         width: calc(200px + 10vw);
     }
 }
 
-
 @media screen and (min-width: 950px) {
-    .consept {
+    .concept {
         flex-direction: column;
         flex-wrap: nowrap;  
         padding: 0;
     }
-
-    .conseptText-container {
+    .conceptText-container {
        flex-direction: row;
        flex-wrap: nowrap;
        justify-content: center;
     }
-
-    .conseptImg {
+    .conceptImg {
         width: calc(200px + 10vw);
     }
-    .consept1 {
+    .conceptOrder1 {
         order: 10;
     }
-    
-    .consept2 {
+    .conceptOrder2 {
         order: 20;
     }
-    
-    .consept3 {
+    .conceptOrder3 {
         order: 30;
     }
-    
-    .consept4 {
+    .conceptOrder4 {
         order: 40;
     }
-
 }
-
-
-
 
 /*-----Prototype-----*/
 
@@ -205,11 +208,40 @@ h1 {
     margin: 7rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
+    flex-direction: column;
+}
+.prototypeText {
+    margin: 0 0 3rem 0;
+}
+.prototypeText-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem 0 3rem;
+    justify-content: center;
+}
+.linkPrototype {
+    font-size: 1.5rem;
+}
+.link-container {
+    margin: 3rem;
+}
+.textAndVideo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.prototypeText {
-    margin: 3.5rem;
-
+@media screen and (min-width: 950px) {
+    .prototype {
+        flex-wrap: nowrap;   
+    }
+    .textAndVideo {
+        flex-direction: row;
+        flex-wrap: nowrap; 
+    }
+    video {
+        margin: 3rem;
+    }
 }
 
 /*-----How its works-----*/
@@ -217,10 +249,7 @@ h1 {
 .worksImg {
     height: 60vh;
     padding: 2rem;
-    
-
 }
-
 .works {
     display: flex;
     flex-direction: column;
@@ -228,39 +257,33 @@ h1 {
     margin: 7rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
-    
 }
-
 .works-container {
     display: flex;
     margin: 1rem;
     flex-direction: column;
-
     align-items: center;
-    
-
 }
 .worksTextBlock {
     /*margin: 3.5rem;*/
     padding: 2rem;
 }
-
- .works1 {
+ .worksOrder1 {
         order: 20;
     }
-    .works2 {
+    .worksOrder2 {
         order: 10;
     }
-    .works3 {
+    .worksOrder3 {
         order: 30;
     }
-    .works4 {
+    .worksOrder4 {
         order: 40;
     }
-    .works5 {
+    .worksOrder5 {
         order: 60;
     }
-    .works6 {
+    .worksOrder6 {
         order: 50;
     }
 
@@ -268,23 +291,22 @@ h1 {
     .works-container {
         flex-direction: row;
     }
-
-   .works1 {
+   .worksOrder1 {
         order: 10;
     }
-    .works2 {
+    .worksOrder2 {
         order: 20;
     }
-    .works3 {
+    .worksOrder3 {
         order: 30;
     }
-    .works4 {
+    .worksOrder4 {
         order: 40;
     }
-    .works5 {
+    .worksOrder5 {
         order: 50;
     }
-    .works6 {
+    .worksOrder6 {
         order: 60;
     }
 }
@@ -292,67 +314,60 @@ h1 {
 
 /*-----omtale-----*/
 
-.kundeomtale {
+.customerReview {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.omtale {
+.review {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
 }
-.kunde {
+.customer {
     width: 20vw;
     border: var(--border-img);
     border-radius: var(--border-radius-img);
     box-shadow: var(--box-shadow);
 }
-
-.omtaleText {
+.reviewText {
     width: 50vw;
     padding: 3rem;
 }
-
-.omtaleorder1 {
+.reviewOrder1 {
     order: 10;
 }
-.omtaleorder2 {
+.reviewOrder2 {
     order: 20;
 }
-.omtaleorder3 {
+.reviewOrder3 {
     order: 40;
 }
-.omtaleorder4 {
+.reviewOrder4 {
     order: 30;
 }    
 
-
 @media screen and (min-width: 950px) {
-   
-.kunde {
-    width: calc(100px + 5vw);
-}
-.omtale {
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.omtaleorder1 {
-    order: 10;
-}
-.omtaleorder2 {
-    order: 20;
-}
-.omtaleorder3 {
-    order: 30;
-}
-.omtaleorder4 {
-    order: 40;
-}
+    .customer {
+        width: calc(100px + 5vw);
+    }
+    .review {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .reviewOrder1 {
+        order: 10;
+    }
+    .reviewOrder2 {
+        order: 20;
+    }
+    .reviewOrder3 {
+        order: 30;
+    }
+    .reviewOrder4 {
+        order: 40;
+    }
 }
 
 /*-----download-----*/
@@ -366,22 +381,18 @@ h1 {
     background-color: var(--color-secundary-color2);
     border-radius: var(--border-radius-img);
     border: var(--border-img);
-
 }
-
 .download-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .downloadImg {
     justify-content: center;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
     box-shadow: var(--box-shadow);
     margin: 1rem;
-    
 }
 
 @media screen and (min-width: 1050px) {
@@ -389,11 +400,9 @@ h1 {
         margin: 7rem 13rem;
         padding: 2rem;
     }
-    
     .downloadImg {
         margin: 3.5rem;
     }
-    
 }
 
 /*-----Footer-----*/
@@ -403,30 +412,12 @@ footer {
     background-color: var(--color-primary-color-light);
     height: 40vh;
 }
-
-.sosialemedier {
-    
-}
-
 .sosial {
     display: flex;
     justify-content: space-around;
     margin: 3rem;
 }
-
 .kontaktInfo {
     display: flex;
     justify-content: space-around;
-
 }
-
-.adresse {
-    
-}
-
-
-
-
-
-/*etter 900px bredde på vw må den gå over i mobil"modus"*/
-
