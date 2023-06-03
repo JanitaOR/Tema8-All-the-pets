@@ -47,6 +47,10 @@ h3 {
     display: flex;
     justify-content: center;
 }
+button {
+    border: none;
+    background-color: transparent;
+}
 
 /*-----Header-----*/
 
@@ -384,7 +388,7 @@ header li {
 }
 .download-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 .downloadImg {
@@ -394,6 +398,9 @@ header li {
     box-shadow: var(--box-shadow);
     margin: 1rem;
 }
+.p-download {
+    margin: 0 0 1rem 0;
+}
 
 @media screen and (min-width: 1050px) {
     .download {
@@ -402,6 +409,10 @@ header li {
     }
     .downloadImg {
         margin: 3.5rem;
+
+    }
+    .download-container {
+        flex-direction: column;
     }
 }
 
