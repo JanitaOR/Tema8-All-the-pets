@@ -409,8 +409,11 @@ header li {
     }
     .downloadImg {
         margin: 3.5rem;
-
     }
+    .download-container {
+        flex-direction: row;
+    }
+
    
 }
 
