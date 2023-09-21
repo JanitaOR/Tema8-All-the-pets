@@ -117,6 +117,7 @@ header li {
     margin: 0 1rem;
 }
 
+
 @media screen and (min-width: 800px) {
     .herotext-container {
         width: 40vw;
@@ -134,7 +135,7 @@ header li {
     flex-direction: column;
     flex-wrap: wrap;
     background-color:var(--color-secundary-color-light3);
-    margin: 7rem;
+    margin: 2rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
     align-items: center;
@@ -168,6 +169,12 @@ header li {
 }
 .conceptOrder4 {
     order: 40;
+}
+
+@media screen and (min-width: 500px) {
+    .concept {
+        margin: 7rem;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -209,7 +216,7 @@ header li {
 .prototype {
     display: flex;
     background-color: var(--color-secundary-color-light1);
-    margin: 7rem;
+    margin: 2rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
     flex-direction: column;
@@ -235,6 +242,12 @@ header li {
     flex-wrap: wrap;
 }
 
+@media screen and (min-width: 500px) {
+    .prototype {
+        margin: 7rem;
+    }
+}
+
 @media screen and (min-width: 950px) {
     .prototype {
         flex-wrap: nowrap;   
@@ -258,7 +271,7 @@ header li {
     display: flex;
     flex-direction: column;
     background-color: var(--color-secundary-color-light2);
-    margin: 7rem;
+    margin: 2rem;
     border-radius: var(--border-radius-img);
     border: var(--border-img);
 }
@@ -290,6 +303,12 @@ header li {
     .worksOrder6 {
         order: 50;
     }
+
+@media screen and (min-width: 500px) {
+    .works {
+        margin: 7rem;
+    }
+}
 
 @media screen and (min-width: 950px) {
     .works-container {
@@ -380,15 +399,15 @@ header li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 7rem;
+    margin: 2rem;
     padding: 2rem;
     background-color: var(--color-secundary-color2);
     border-radius: var(--border-radius-img);
     border: var(--border-img);
 }
 .download-container {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
+    
     justify-content: center;
 }
 .downloadImg {
@@ -402,6 +421,17 @@ header li {
     margin: 0 0 1rem 0;
 }
 
+@media screen and (min-width: 500px) {
+    .download {
+        margin: 7rem;
+    }
+    .download-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 1050px) {
     .download {
         margin: 7rem 13rem;
@@ -413,7 +443,6 @@ header li {
     .download-container {
         flex-direction: row;
     }
-
    
 }
 
@@ -422,7 +451,7 @@ header li {
 footer {
     border-top: solid 0.3rem #262626;
     background-color: var(--color-primary-color-light);
-    height: 40vh;
+    /*height: 40vh;*/
 }
 .sosial {
     display: flex;
@@ -430,6 +459,17 @@ footer {
     margin: 3rem;
 }
 .kontaktInfo {
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    text-align: center;
 }
+.adresse {
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 500px) {
+    .kontaktInfo {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
